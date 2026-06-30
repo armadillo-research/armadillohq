@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armadillo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="src/favicon.svg" />
+    <style>
+        body {
+            font-family: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 100vh;
+            background-color: #1B4F3F;
+            color: #CAE0C2;
+            box-sizing: border-box;
+        }
+
+        .nowrap {
+            white-space: nowrap;
+        }
+
+        .container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            text-align: center;
+            max-width: 650px; 
+            margin: 0 auto;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 32px;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin: 0 0 16px 0;
+            font-weight: 500;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        p {
+            font-size: 1.125rem;
+            line-height: 1.6;
+            margin: 0;
+            font-weight: 300;
+        }
+
+        footer {
+            padding: 30px 20px;
+            text-align: center;
+            font-size: 0.95rem;
+            font-weight: 300;
+            color: #CAE0C2;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                max-width: 100%;
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2.2rem;
+            }
+            p {
+                font-size: 1.05rem;
+            }
+            .logo {
+                width: 70px;
+                height: 70px;
+                margin-bottom: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img class="logo" src="src/logo.svg" alt="Armadillo Logo">
+
+        <h1>Get ready.</h1>
+        <p>We are preparing the website for you, so you can discover all about our scope and research. <u>We're starting on July 18, 2026, at 3:00 PM CET.</u></p>
+    </div>
+
+    <footer>
+        &copy; Armadillo - All rights reserved.
+    </footer>
+
+</body>
+</html>
