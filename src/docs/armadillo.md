@@ -1,6 +1,6 @@
 {[date] 18 July, 2026}
 
-# Artificial General Inteligence
+# Artificial General Intelligence
 
 {[read_time]14 min read}
 {[copy_raw_file]Copy Markdown}
