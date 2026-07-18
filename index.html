@@ -1,95 +1,101 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Armadillo</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/svg+xml" href="src/armadillo.svg" />
-    <style>
-        body {
-            font-family: "Geist", sans-serif !important;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            min-height: 100vh;
-            background-color: #000;
-            color: #fff;
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Armadillo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css" id="hljs-light-theme" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js" defer></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" defer></script>
 
-        .nowrap {
-            white-space: nowrap;
-        }
-
-        .container {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 24px;
-            text-align: center;
-            max-width: 650px; 
-            margin: 0 auto;
-        }
-
-        .logo {
-            width: 80px;
-            height: 80px;
-            margin-bottom: 32px;
-            filter: brightness(0) invert(1);
-        }
-
-        h1 {
-            font-size: 2.8rem;
-            margin: 0 0 16px 0;
-            font-weight: 500;
-            line-height: 1.2;
-            letter-spacing: -0.02em;
-        }
-
-        p {
-            font-size: 1.125rem;
-            line-height: 1.6;
-            margin: 0;
-            font-weight: 300;
-        }
-
-        footer {
-            padding: 30px 20px;
-            text-align: center;
-            font-size: 0.95rem;
-            font-weight: 300;
-            color: #CAE0C2;
-        }
-
-        @media (max-width: 480px) {
-            .container {
-                max-width: 100%;
-                padding: 20px;
-            }
-            h1 {
-                font-size: 2.2rem;
-            }
-            p {
-                font-size: 1.05rem;
-            }
-            .logo {
-                width: 70px;
-                height: 70px;
-                margin-bottom: 24px;
-            }
-        }
-    </style>
+  <link rel="icon" type="image/svg+xml" href="src/logo/armadillo_small_green.svg" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <img class="logo" src="src/armadillo.svg">
+
+  <nav>
+    <a class="nav-logo" href="../index.html">
+      <img src="src/logo/armadillo_small.svg"/>
+    </a>
+    <div class="nav-center">
+      <!--
+      <div class="search-container">
+       <div class="search-input-wrapper">
+  <i class="ti ti-search search-icon"></i>
+  <input
+    type="text"
+    id="docsSearchInput"
+    placeholder="Start searching..."
+    autocomplete="off"
+    maxlength="100"
+  />
+  <kbd class="search-shortcut" id="searchShortcut">Ctrl+K</kbd>
+</div>
+        <div id="searchResultsDropdown" class="search-results-dropdown"></div>
+      </div>-->
     </div>
+    <div class="nav-actions">
+      <a class="navbar-button" href="mailto:info@armadillohq.com" style="text-decoration: none;">
+  Get Involved
+  <i class="ti ti-arrow-up-right"></i>
+</a>
+      <button class="hamburger" id="hamburgerBtn">
+        <img src="src/icons/list.svg"/>
+      </button>
+    </div>
+  </nav>
+
+  <div class="sidebar" id="sidebar">
+    <ul>
+      <li class="sidebar-item">
+        <a href="" data-md="src/docs/home.md">Home</a>
+      </li>
+      <li class="sidebar-item">
+        <a href="#" data-md="src/docs/research.md">Research</a>
+      </li>
+    </ul>
+
+   <p>You can find us on</p>
+<ul>
+  <li class="sidebar-item">
+    <a href="https://www.instagram.com/armadilloresearch/" target="_blank">
+      Instagram
+      <img src="src/icons/instagram.svg" class="sidebar-icon">
+    </a>
+    <a href="https://github.com/armadillo-research" target="_blank">
+      Github
+      <img src="src/icons/github.svg" class="sidebar-icon">
+    </a>
+  </li>
+</ul>
+
+<p>Armadillo © 2026 - All Rights Reserved</p>
+
+    <div class="sidebar-actions">
+      <a class="navbar-button" href="mailto:info@armadillohq.com" style="text-decoration: none;">
+  Get Involved
+  <i class="ti ti-arrow-up-right"></i>
+</a>
+    </div>
+  </div>
+
+  <div class="content" id="content"></div>
+
+  <div class="sidebar-left">
+    <div class="toc-wrapper">
+      <div class="toc-track"></div>
+      <div class="toc-indicator" id="tocIndicator"></div>
+      <div class="toc" id="toc"></div>
+    </div>
+  </div>
+
 </body>
 </html>
